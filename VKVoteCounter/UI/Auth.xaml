@@ -1,0 +1,14 @@
+﻿<controls:MetroWindow x:Class="VKVoteCounter.UI.Auth"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        Title="Auth" Height="400" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <WebBrowser Name="vk"/>
+        <Button Grid.Row="1" Content="OK" Name="OkButton" Margin="5" IsEnabled="False" Click="OkButton_OnClick"/>
+    </Grid>
+</controls:MetroWindow>
